@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>BaLLs game</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="container flex-container">
+
+      <div id="game">
+        <button>Start game!</button>
+        <p>You have <strong>0</strong> seconds left!</p>
+        <p>Tame all <strong>random</strong> balls!</p>
+      </div>
+
+      <div>
+        <h2>Wild balls</h2>
+        <div id="wildBalls"></div>
+      </div>
+
+      <div>
+        <h2>Tamed balls</h2>
+        <div id="tamedBalls"></div>
+
+        <h3>You have tamed</h3>
+
+        <div class="counts">
+          <p><img src="img/baseball.png">baseballs: </p>
+          <p><img src="img/football.png">footballs: </p>
+          <p><img src="img/basketball.png">basketballs: </p>
+        </div>
+      </div>
+    </div>
+    <div id="wrong" class="hideIt popUp">
+      <div>
+        <p>WRONG BALL!!!</p>
+        <button>Continue</button>
+      </div>
+    </div>
+    <div id="over" class="hideIt popUp">
+      <div>
+        <p>GAME OVER!!!</p>
+        <button>Try again :)</button>
+      </div>
+    </div>
+    <div id="win" class="hideIt popUp">
+      <div class="flex-container">
+        <p>YOU WON</p>
+        <button>Play again :)</button>
+      </div>
+    </div>
+
+    <script src="script.js" type="application/javascript"></script>
+  </body>
+
+</html>
